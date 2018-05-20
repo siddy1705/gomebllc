@@ -1,0 +1,62 @@
+/*
+Theme Name: gomeb
+Theme URI: 
+Author: Siddharth Vitthaldas
+Author URI: 
+Description: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gomeb
+*/
+
+.text{
+	color: rgba(31,181,172,.9);
+	text-align: center;
+}
+
+
+.Services-tab{
+	margin-top:20px;
+	height: 300px !important;
+}
+
+/*
+  nav link items
+*/
+.folded-corner{
+  padding: 25px 25px;
+  position: relative;
+  font-size: 90%;
+  text-decoration: none;
+  color: #999; 
+  background: transparent;
+  transition: all ease .5s;
+  border: 1px solid rgba(31,181,172,.9);
+}
+
+.service_tab_1{	height: 300px !important;}
+.service_tab_1:hover .fa-icon-image{transform: rotate(360deg) scale(1.5);}
+
+.fa-icon-image{
+	color: rgba(31,181,172,.9);
+	display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size-adjust: none;
+  font-stretch: normal;
+  -moz-font-feature-settings: normal;
+  -moz-font-language-override: normal;
+  text-rendering: auto;
+  transition: all .65s linear 0s;
+  text-align: center;
+  transition: all 1s cubic-bezier(.99,.82,.11,1.41);
+}
+
+
+h3.service-title { margin: 20px 0 10px; color: rgba(31,181,172,.9);}
+
+body.admin-bar #branding-wrap{top: 28px;} 
+body.admin-bar #wrapper{margin-top: 145px;}
