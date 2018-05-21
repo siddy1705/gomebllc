@@ -1,4 +1,13 @@
 <!-- about -->
+<?php
+$gomeb_about_ID = 69;
+$gomeb_about = get_post($gomeb_about_ID);
+$gomeb_about_title = $gomeb_about->post_title;
+$gomeb_about_content = $gomeb_about->post_content;
+$gomeb_about_image = get_the_post_thumbnail_url( $gomeb_about_ID );
+$gomeb_about_short = get_post_meta( $gomeb_about_ID, 'about-short', true );
+?>
+
 <div class="line">
 </div>
 	<div class="about" id="about">
@@ -8,14 +17,12 @@
 			</div>
 			<div class="col-md-6 about-left">
 				<div class="w3labout-img boxw3-agile"> 
-					<img src="images/about.jpg" alt="" class="img-responsive" />
- 
+					<img src="<?php echo esc_url( $gomeb_about_image ); ?>" alt="" class="img-responsive" />
 				</div>
 			</div>
 			<div class="col-md-6 about-right">
-				<h2>Gomeb & Associates</h2>
-				<p>Is a chemical, industrial, laboratory, hazmat, health and occupational safety consulting company.</p>
-				<p>With over 40 years of experienced our staff and associates we will help you navigate regulatory demands and succeed in a challenging global market.</p>
+				<h2><?php echo $gomeb_about_title; ?></h2>
+				<?php echo $gomeb_about_short; ?>
 				<a href="#myModal" class="w3more" data-toggle="modal"><i class="fa fa-mail-forward" aria-hidden="true"></i> Read more</a>
 			</div>
 			<div class="clearfix"></div>
@@ -29,17 +36,12 @@
 		<div class="modal-content">
 			<div class="modal-header"> 
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>						
-				<h4 class="modal-title">Gomeb & Associates</h4>
+				<h4 class="modal-title"><?php echo $gomeb_about_title; ?></h4>
 			</div> 
 		<div class="modal-body">
 			<div class="agileits-w3layouts-info">
 				<!-- <img src="images/about.jpg" alt="" /> -->
-				<h2>What We Can Do</h2>
-				<p>We can provide innovative, customized approach to your specific needs. Our experience includes: Route cause and fault tree analysis, incident, occupational, and chemical risk
-				analysis. Beginning process development, lab safety and waste management. Environmental regulatory compliance review, remediation, monitoring for pollutants and clandestine manufacturing. Governmental, regulatory applications and related paperwork. Development of safety protocols, hazardous</p>
-				<h2 style="margin-top: 20px;">Who Do We Serve</h2>
-				<p>No matter if you are a small start-up or a well-established business Gomeb can meet your specific needs and deadlines. Our team works with laboratories, industrial plants, higher
-				education, governmental agencies, Homeland Security, and international governments.</p>
+				<?php echo $gomeb_about_content; ?>
 			</div>
 		</div>
 		</div>

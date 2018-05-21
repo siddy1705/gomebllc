@@ -496,12 +496,12 @@ a.w3more:hover {
 	left:0;
 }
 /** Scale agile-caption :hover Behaviour **/
-.boxw3-agile:hover img{
+/*.boxw3-agile:hover img{
 	-moz-transform: scale(1.5);
 	-o-transform: scale(1.5);
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
-}
+}*/
 
 .boxw3-agile:hover .agile-caption h3,.boxw3-agile:hover .agile-caption p {
 	-moz-transform: translateX(380px);
@@ -660,7 +660,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 	margin:3em 0 0;
 }
 div#team {
-    background: url(../images/22.jpg) no-repeat 0px 0px;
+    background: url(../images/team.jpg) no-repeat 0px 0px;
     background-size: cover;
 	background-attachment:fixed;
 }
@@ -1406,7 +1406,7 @@ i.fa.fa-linkedin{
 .contact-left.agileits-w3layouts {
     padding: 0;
 } 
-.contact input[type="text"],.contact input[type="email"] {
+.contact input[type="text"],.contact input[type="email"], .contact input[type="tel"] {
     width: 100%;
     color: #999;
     float: left;
