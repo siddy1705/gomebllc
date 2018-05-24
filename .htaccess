@@ -10,3 +10,7 @@ RewriteRule . /dev/index.php [L]
 </IfModule>
 
 # END WordPress
+AuthType Basic
+AuthName "Gomeb LLC Dev"
+AuthUserFile "/home/g5a8rsfaapoh/.htpasswds/public_html/dev/passwd"
+require valid-user
